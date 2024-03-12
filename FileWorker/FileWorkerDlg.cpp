@@ -225,8 +225,10 @@ void CFileWorkerDlg::OnBnClickedButtonFilesave()
 void CFileWorkerDlg::OnBnClickedButtonFileupdate()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	CReplaceDlg DlgReplace;
-	DlgReplace.DoModal();
+	CReplaceDlg* DlgReplace = new CReplaceDlg;
+	DlgReplace->parent = this;
+	DlgReplace->Create(IDD_DIALOG_REPLACE);
+	DlgReplace->ShowWindow(SW_SHOW);
 }
 
 
@@ -235,8 +237,10 @@ void CFileWorkerDlg::OnBnClickedButtonFileupdate()
 void CFileWorkerDlg::OnBnClickedButtonFiledelete()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	CDeleteDlg DlgDelete;
-	DlgDelete.DoModal();
+	CDeleteDlg* DlgDelete=new CDeleteDlg;
+	DlgDelete->parent = this;
+	DlgDelete->Create(IDD_DIALOG_DELETE);
+	DlgDelete->ShowWindow(SW_SHOW);
 }
 
 

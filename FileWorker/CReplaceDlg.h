@@ -27,7 +27,11 @@ public:
 	CString replaceEdit;
 	CFileWorkerDlg* parent;
 	int strIndex;
+	int startIndexOfTarget;
+	int endIndexOfTarget;
 	afx_msg void OnBnClickedButtonReplace();
 	afx_msg void OnBnClickedButtoncancle();
 	afx_msg void OnBnClickedButtonSearch();
+	afx_msg void OnChangeEditFind();
+	afx_msg void OnBnClickedButtonChange();
 };

@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include "afxdialogex.h"
+#include "FileWorkerDlg.h"
 
 
 // CDeleteDlg 대화 상자
@@ -25,4 +26,11 @@ public:
 	CString deleteEdit;
 	afx_msg void OnBnClickedButtonDelete();
 	afx_msg void OnBnClickedButtoncancle();
+	int startIndexOfTarget;
+	int endIndexOfTarget;
+	CFileWorkerDlg* parent;
+	afx_msg void OnBnClickedButtonSearch();
+	int strIndex;
+	afx_msg void OnBnClickedButtonDel();
+	afx_msg void OnChangeEditDelete();
 };
