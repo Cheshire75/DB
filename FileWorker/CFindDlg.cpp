@@ -68,6 +68,7 @@ void CFindDlg::OnBnClickedButtonFind()
 		}
 		parent->mainEditorBox.SetFocus();
 		parent->mainEditorBox.SetSel(startIndexOfTarget, endIndexOfTarget, TRUE);
+		parent->mainEditorBox.SendMessage(EM_SCROLLCARET);
 		if (strIndex + 1 >= strlen(strEdit)) {
 			strIndex = 0;
 		}

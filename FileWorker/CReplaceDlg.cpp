@@ -86,6 +86,7 @@ void CReplaceDlg::OnBnClickedButtonSearch()
 		}
 		parent->mainEditorBox.SetFocus();
 		parent->mainEditorBox.SetSel(startIndexOfTarget, endIndexOfTarget, TRUE);
+		parent->mainEditorBox.SendMessage(EM_SCROLLCARET);
 		if (strIndex + 1 >= strlen(strEdit)) {
 			strIndex = 0;
 		}
@@ -114,6 +115,7 @@ void CReplaceDlg::OnChangeEditFind()
 void CReplaceDlg::OnBnClickedButtonChange()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	UpdateData(TRUE);
 	if (startIndexOfTarget == endIndexOfTarget) {
 		MessageBox("다음 찾기를 눌러 수정할 단어를 선택해주세요");
 	}
@@ -124,6 +126,7 @@ void CReplaceDlg::OnBnClickedButtonChange()
 		parent->UpdateData(FALSE);
 		parent->mainEditorBox.SetFocus();
 		parent->mainEditorBox.SetSel(startIndexOfTarget, startIndexOfTarget + strlen(replaceEdit), TRUE);
+		parent->mainEditorBox.SendMessage(EM_SCROLLCARET);
 		strIndex--;
 	}
 }

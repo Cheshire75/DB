@@ -43,14 +43,21 @@ END_MESSAGE_MAP()
 void CInsertDlg::OnBnClickedButtonInsert()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	CString strEdit = parent->strEdit;
+	/*CString strEdit = parent->strEdit;
 	UpdateData(TRUE);
 	strEdit.Insert(strEdit.GetLength(), insertEdit);
 
 
 	parent->strEdit = strEdit;
-	parent->UpdateData(FALSE);
+	parent->UpdateData(FALSE);*/
 
+	UpdateData(TRUE);
+	int i = parent->mainEditorBox.GetWindowTextLengthA();
+	parent->mainEditorBox.SetSel(i, i);
+	parent->mainEditorBox.ReplaceSel(insertEdit+"\r\n");
+	parent->UpdateData(FALSE);
+	int nLineCount = parent->mainEditorBox.GetLineCount();
+	parent->mainEditorBox.LineScroll(nLineCount);
 }
 
 
