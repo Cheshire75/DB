@@ -46,4 +46,5 @@ public:
 	CEdit mainEditorBox;
 	afx_msg void OnBnClickedButtonInsert();
 	afx_msg void OnChangeEdit();
+	virtual BOOL PreTranslateMessage(MSG* pMsg);
 };

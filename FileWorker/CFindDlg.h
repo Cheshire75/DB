@@ -32,4 +32,5 @@ private:
 public:
 //	virtual BOOL OnInitDialog();
 	afx_msg void OnChangeEditFind();
+//	virtual BOOL PreTranslateMessage(MSG* pMsg);
 };

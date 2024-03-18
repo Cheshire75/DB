@@ -33,4 +33,5 @@ public:
 	int strIndex;
 	afx_msg void OnBnClickedButtonDel();
 	afx_msg void OnChangeEditDelete();
+//	virtual BOOL PreTranslateMessage(MSG* pMsg);
 };

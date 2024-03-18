@@ -34,4 +34,5 @@ public:
 	afx_msg void OnBnClickedButtonSearch();
 	afx_msg void OnChangeEditFind();
 	afx_msg void OnBnClickedButtonChange();
+//	virtual BOOL PreTranslateMessage(MSG* pMsg);
 };

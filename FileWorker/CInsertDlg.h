@@ -26,4 +26,5 @@ public:
 	CFileWorkerDlg* parent;
 	afx_msg void OnBnClickedButtonInsert();
 	afx_msg void OnBnClickedButtonOk();
+//	virtual BOOL PreTranslateMessage(MSG* pMsg);
 };
