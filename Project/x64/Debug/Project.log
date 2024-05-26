@@ -1,0 +1,5 @@
+﻿  UpdateSales.cpp
+C:\Users\jhr75\OneDrive\바탕 화면\SCdata\31\DB\Project\UpdateSales.cpp(71,32): warning C4477: 'sprintf_s' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'CString'입니다.
+C:\Users\jhr75\OneDrive\바탕 화면\SCdata\31\DB\Project\UpdateSales.cpp(96,32): warning C4477: 'sprintf_s' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'CString'입니다.
+C:\Users\jhr75\OneDrive\바탕 화면\SCdata\31\DB\Project\UpdateSales.cpp(96,32): warning C4477: 'sprintf_s' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'CString'입니다.
+  Project.vcxproj -> C:\Users\jhr75\OneDrive\바탕 화면\SCdata\31\DB\Project\x64\Debug\Project.exe
